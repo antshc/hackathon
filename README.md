@@ -1,5 +1,10 @@
 # hackathon
 
+## Learn
+
+- [Full flow walkthrough (video)](https://www.youtube.com/watch?v=hX7yG1KVYhI)
+
+
 A toolkit for autonomous coding with Copilot CLI and VS Code — includes reusable skills and an AFK loop for hands-off task execution.
 
 ## Installing Skills
@@ -89,3 +94,7 @@ The agent commits locally but never pushes — you review and push when you're b
 ### One-shot mode
 
 `ralph/once.sh` runs a single iteration using `claude` CLI with `--permission-mode acceptEdits` instead of the loop. Useful for quick supervised runs.
+
+## Resource links
+- [Original skills repository](https://github.com/mattpocock/skills)
+- [Original AFK bash script](https://github.com/mattpocock/ralph-workshop-repo-002/blob/main/plans/afk-claude.sh)
