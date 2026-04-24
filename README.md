@@ -1,9 +1,11 @@
-# hackathon
+# Hackathon Task
 
-## Learn
+1. **Install Copilot CLI and configure skills** — set up the CLI, copy skills into `~/.agents/skills/`, and verify they load in VS Code.
+2. **Watch the walkthrough video** — [Full flow walkthrough](https://www.youtube.com/watch?v=hX7yG1KVYhI) to understand the end-to-end workflow.
+3. **Select a project idea and implement it using the new approach** — pick an idea, write a PRD, break it into issues, and let the AFK loop implement it.
+4. **Write feedback about the experience** — answer the questions below [Feedback Questions](#feedback-questions) to capture your impressions.
 
-- [Full flow walkthrough (video)](https://www.youtube.com/watch?v=hX7yG1KVYhI)
-
+# Toolkit Overview
 
 A toolkit for autonomous coding with Copilot CLI and VS Code — includes reusable skills and an AFK loop for hands-off task execution.
 
@@ -94,6 +96,16 @@ The agent commits locally but never pushes — you review and push when you're b
 ### One-shot mode
 
 `ralph/once.sh` runs a single iteration using `claude` CLI with `--permission-mode acceptEdits` instead of the loop. Useful for quick supervised runs.
+
+
+
+### Feedback Questions
+
+1. How did the autonomous workflow affect your overall productivity compared to your usual development process?
+2. How confident did you feel in the quality of the code produced by the agent without manual intervention?
+3. Were the generated PRD and issue breakdowns clear and actionable enough to guide implementation?
+4. What was the biggest friction point or limitation you encountered during the hackathon?
+5. Would you incorporate this approach (skills, AFK loop, PRD-driven development) into your day-to-day work? Why or why not?
 
 ## Resource links
 - [Original skills repository](https://github.com/mattpocock/skills)
