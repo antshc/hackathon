@@ -14,6 +14,13 @@
  - Able to filter audit log entries by date using the format dd/MM/yyyy 📆
  - Filters can be combined to narrow results by both VPG ID and date 🎯
 
+## Tips
+ - After prd.md is generated, it is useful to run the /grill-me skill using prd.md as context to enrich the document with additional details.
+ - Review prd.md carefully and fill in any missing details to help the AI produce a more accurate implementation.
+ - The skills generate issues following a Vertical Slice approach (API → Logic Layer → Database).
+   - Repositories that include integration tests may be moved to the separate issues.
+   - If a separate issue is created for API automation tests, you can request combining those tests with the corresponding functional implementation issue.
+
 ## Toolkit Overview
 
 A toolkit for autonomous coding with Copilot CLI and VS Code — includes reusable skills and an AFK loop for hands-off task execution.
