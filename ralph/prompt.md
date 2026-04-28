@@ -8,7 +8,7 @@ You've also been passed a file containing the last few commits. Review these to 
 
 If all AFK tasks are complete, output <promise>NO MORE TASKS</promise>.
 
-# TASK SELECTION
+# TASK 
 
 Pick the next task. Prioritize tasks in this order:
 
@@ -53,6 +53,7 @@ Make a git commit. The commit message must:
 
 # THE ISSUE
 
+If all issues from `issues/` have been moved to `issues/done/`, also move `issues/prd.md` to `issues/done/`.
 If the task is complete, move the issue file to `issues/done/`.
 If the task is not complete, add a note to the issue file with what was done.
 
