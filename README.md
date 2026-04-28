@@ -70,7 +70,7 @@ cp -r skills/* .github/skills/
 ### Prerequisites
 
 - [Copilot CLI](https://docs.github.com/en/copilot/github-copilot-in-the-cli) (`copilot` command available on PATH)
-- `jq` installed
+- `jq` installed (winget install jqlang.jq)
 - A Git repository with issue files in `issues/` (markdown files describing tasks)
 - The `ralph/prompt.md` file (included) which tells the agent how to pick and execute tasks
 
