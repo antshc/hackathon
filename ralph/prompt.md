@@ -1,6 +1,6 @@
 # ISSUES
 
-Local issue files from `issues/` are provided at start of context. Parse them to understand the open issues.
+GitHub issues are provided at start of context. Parse it to get open issues with their bodies and comments.
 
 You will work on the AFK issues only, not the HITL ones.
 
@@ -32,14 +32,14 @@ Explore the repo.
 
 # IMPLEMENTATION
 
-Use /tdd to complete the task.
+Complete the task.
 
 # FEEDBACK LOOPS
 
 Before committing, run the feedback loops:
 
-- `npm run test` to run the tests
-- `npm run typecheck` to run the type checker
+- Build the project with changed files
+- Run only specific tests for changed files
 
 # COMMIT
 
@@ -51,9 +51,9 @@ Make a git commit. The commit message must:
 
 # THE ISSUE
 
-If the task is complete, move the issue file to `issues/done/`.
+If the task is complete, close the original GitHub issue.
 
-If the task is not complete, add a note to the issue file with what was done.
+If the task is not complete, leave a comment on the GitHub issue with what was done.
 
 # FINAL RULES
 
