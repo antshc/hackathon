@@ -1,6 +1,6 @@
 # ISSUES
 
-GitHub issues are provided at start of context. Parse it to get open issues with their bodies and comments.
+Local issue files from `issues/` are provided at start of context. Parse them to understand the open issues.
 
 You will work on the AFK issues only, not the HITL ones.
 
@@ -40,6 +40,7 @@ Before committing, run the feedback loops:
 
 - Build the project with changed files
 - Run only specific tests for changed files
+- Run unit and integration tests for changed files
 
 # COMMIT
 
@@ -51,9 +52,8 @@ Make a git commit. The commit message must:
 
 # THE ISSUE
 
-If the task is complete, close the original GitHub issue.
-
-If the task is not complete, leave a comment on the GitHub issue with what was done.
+If the task is complete, move the issue file to `issues/done/`.
+If the task is not complete, add a note to the issue file with what was done.
 
 # FINAL RULES
 
