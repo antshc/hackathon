@@ -16,14 +16,17 @@ final_result='select(.type == "result").result // empty'
 
 for ((i=1; i<=$1; i++)); do
   tmpfile=$(mktemp)
-  trap "rm -f $tmpfile" EXIT
+  prompt_file=$(mktemp)
+  trap "rm -f $tmpfile $prompt_file" EXIT
 
   commits=$(git log -n 5 --format="%H%n%ad%n%B---" --date=short 2>/dev/null || echo "No commits found")
   issues=$(cat issues/*.md 2>/dev/null || echo "No issues found")
   prompt=$(cat ralph/prompt.md)
 
+  printf '# Issues\n\n%s\n\n# Previous Commits\n\n%s\n\n%s' "$issues" "$commits" "$prompt" > "$prompt_file"
+
   copilot \
-    -p "$(printf '# Issues\n\n%s\n\n# Previous Commits\n\n%s\n\n%s' "$issues" "$commits" "$prompt")" \
+    -p "@$prompt_file" \
     --model claude-sonnet-4.6 \
     --effort medium \
     --output-format json \
