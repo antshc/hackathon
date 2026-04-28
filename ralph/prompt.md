@@ -53,9 +53,9 @@ Make a git commit. The commit message must:
 
 # THE ISSUE
 
-If all issues from `issues/` have been moved to `issues/done/`, also move `issues/prd.md` to `issues/done/`.
-If the task is complete, move the issue file to `issues/done/`.
-If the task is not complete, add a note to the issue file with what was done.
+If all issues from `issues/` have been moved to `issues/done/`, also move `issues/prd.md` to `issues/done/`.    
+If the task is complete, move the issue file to `issues/done/`.    
+If the task is not complete, add a note to the issue file with what was done.    
 
 # FINAL RULES
 
