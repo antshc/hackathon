@@ -11,8 +11,8 @@ fi
 # jq filter to extract streaming text from assistant messages
 stream_text='select(.type == "assistant").message.content[]? | select(.type == "text").text // empty | gsub("\n"; "\r\n") | . + "\r\n\n"'
 
-# jq filter to extract final result
-final_result='select(.type == "result").result // empty'
+# jq filter to extract final result (accumulated assistant text content)
+final_result='[select(.type == "assistant").message.content[]? | select(.type == "text").text // empty] | add // empty'
 
 for ((i=1; i<=$1; i++)); do
   tmpfile=$(mktemp)
@@ -38,7 +38,6 @@ for ((i=1; i<=$1; i++)); do
     --deny-tool='shell(git reset)' \
     --deny-tool='shell(git rebase)' \
     --deny-tool='shell(git clean)' \
-  | grep --line-buffered '^{' \
   | tee "$tmpfile" \
   | jq --unbuffered -rj "$stream_text"
 
