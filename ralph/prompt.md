@@ -41,6 +41,7 @@ Before committing, run the feedback loops:
 - Build the project with changed files
 - Run only specific tests for changed files
 - Run unit and integration tests for changed files
+- Run ApiGateway IntegrationTests with the `export ZIC_TESTING_FW_RUNTIMEOPTIONS__APIGATEWAYTESTCONTEXTSETTINGS__COMPOSENAME=aws-local` environment variable to use the local test composition root 
 
 # COMMIT
 
