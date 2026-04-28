@@ -18,6 +18,7 @@
  - AI is an assistant that helps generate code efficiently, so critical thinking and advanced engineering practices become even more important.
  - After prd.md is generated, it is useful to run the /grill-me skill using prd.md as context to enrich the document with additional details.
  - It is also valuable to review the code yourself—if you have a better idea for the implementation, provide your approach instead of relying on the proposed one.
+ - if you know a latest relevant example of the implemention in the code, mention this in the prd (ex: "the repository test must mirror the ExistDocumentRepositoryTests", "Use the UserController as an example")
  - Review prd.md and issues carefully and fill in any missing details to help the AI produce a more accurate implementation.
  - The skills generate issues following a Vertical Slice approach (API → Logic Layer → Database).
    - Repositories that include integration tests may be moved to the separate issues.
