@@ -8,7 +8,7 @@ You've also been passed a file containing the last few commits. Review these to 
 
 If all AFK tasks are complete, output <promise>NO MORE TASKS</promise>.
 
-# TASK 
+# TASK SELECTION
 
 Pick the next task. Prioritize tasks in this order:
 
@@ -40,8 +40,7 @@ Before committing, run the feedback loops:
 
 - Build the project with changed files
 - Run only specific tests for changed files
-- Run unit and integration tests for changed files
-- Run ApiGateway IntegrationTests with the `export ZIC_TESTING_FW_RUNTIMEOPTIONS__APIGATEWAYTESTCONTEXTSETTINGS__COMPOSENAME=aws-local` environment variable to use the local test composition root 
+- Run test with the `export ZIC_TESTING_FW_RUNTIMEOPTIONS__APIGATEWAYTESTCONTEXTSETTINGS__COMPOSENAME=aws-local` environment variable to use the local test composition root 
 
 # COMMIT
 
@@ -53,9 +52,9 @@ Make a git commit. The commit message must:
 
 # THE ISSUE
 
-If all issues from `issues/` have been moved to `issues/done/`, also move `issues/prd.md` to `issues/done/`.    
-If the task is complete, move the issue file to `issues/done/`.    
-If the task is not complete, add a note to the issue file with what was done.    
+If all issues from issues/ have been moved to issues/done/, also move issues/prd.md to issues/done/.
+If the task is complete, move the issue file to issues/done/.
+If the task is not complete, add a note to the issue file with what was done.
 
 # FINAL RULES
 
