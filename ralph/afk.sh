@@ -9,10 +9,10 @@ if [ -z "$1" ]; then
 fi
 
 # jq filter to extract streaming text from assistant messages
-stream_text='select(.type == "assistant").message.content[]? | select(.type == "text").text // empty | gsub("\n"; "\r\n") | . + "\r\n\n"'
+stream_text='select(.type == "assistant.message_delta").data.text // empty | gsub("\n"; "\r\n") | . + "\r\n\n"'
 
 # jq filter to extract final result (accumulated assistant text content)
-final_result='[select(.type == "assistant").message.content[]? | select(.type == "text").text // empty] | add // empty'
+final_result='[select(.type == "assistant.message").data.content // empty] | add // empty'
 
 for ((i=1; i<=$1; i++)); do
   tmpfile=$(mktemp)
