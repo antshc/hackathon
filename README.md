@@ -16,7 +16,7 @@
 
 ## Tips
  - After prd.md is generated, it is useful to run the /grill-me skill using prd.md as context to enrich the document with additional details.
- - Review prd.md carefully and fill in any missing details to help the AI produce a more accurate implementation.
+ - Review prd.md and issues carefully and fill in any missing details to help the AI produce a more accurate implementation.
  - The skills generate issues following a Vertical Slice approach (API → Logic Layer → Database).
    - Repositories that include integration tests may be moved to the separate issues.
    - If a separate issue is created for API automation tests, you can request combining those tests with the corresponding functional implementation issue.
