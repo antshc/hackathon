@@ -83,6 +83,7 @@ cp -r skills/* .github/skills/
 - `jq` installed (winget install jqlang.jq)
 - A Git repository with issue files in `issues/` (markdown files describing tasks)
 - The `ralph/prompt.md` file (included) which tells the agent how to pick and execute tasks
+- Add /issues and /ralph to the .gitignore 
 
 ### How it works
 
