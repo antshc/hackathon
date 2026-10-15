@@ -1,6 +1,6 @@
 ## Hackathon Task
 
-1. **Install Copilot CLI and configure skills** — set up the CLI, copy skills into `~/.agents/skills/`, and verify they load in VS Code.
+1. **Install Copilot CLI and configure skills** — set up the CLI, copy skills into `~/.copilot/skills/`, and verify they load in VS Code.
 2. **Watch the walkthrough video** — [Full flow walkthrough](https://www.youtube.com/watch?v=hX7yG1KVYhI) to understand the end-to-end workflow.
 3. **Select a project idea and implement it using the new approach** — pick an idea, write a PRD, break it into issues, and let the AFK loop implement it.
 4. **Write feedback about the experience** — answer the questions below [Feedback Questions](#feedback-questions) to capture your impressions.
